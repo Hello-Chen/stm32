@@ -61,12 +61,13 @@ static void MX_GPIO_Init(void);
 #define KEY1 HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_13)
 #define KEY2 HAL_GPIO_ReadPin(GPIOD,GPIO_PIN_13)
 
-void sca_key(){
+void sca_key() {
     if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_RESET) {
         HAL_Delay(100);
         if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_SET) {
-            HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_2);
-            HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_3);
+            //用或 同时给两个引脚赋值
+            HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_2 | GPIO_PIN_3);
+            // HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_3);
             while (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_RESET);
         }
     }
@@ -76,7 +77,7 @@ void sca_key(){
         if (KEY2 == 0) {
             HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_2);
             HAL_Delay(500);
-            HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_3);
+            HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_3 | GPIO_PIN_1);
             while (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_RESET);
         }
     }
@@ -175,10 +176,10 @@ static void MX_GPIO_Init(void) {
     __HAL_RCC_GPIOA_CLK_ENABLE();
 
     /*Configure GPIO pin Output Level */
-    HAL_GPIO_WritePin(GPIOE, LED1_Pin | LED2_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(GPIOE, LED1_Pin | LED2_Pin | LED3_Pin, GPIO_PIN_SET);
 
-    /*Configure GPIO pins : LED1_Pin LED2_Pin */
-    GPIO_InitStruct.Pin = LED1_Pin | LED2_Pin;
+    /*Configure GPIO pins : LED1_Pin LED2_Pin LED3_Pin*/
+    GPIO_InitStruct.Pin = LED1_Pin | LED2_Pin | LED3_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

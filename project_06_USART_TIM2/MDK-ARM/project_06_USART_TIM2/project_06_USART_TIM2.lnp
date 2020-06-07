@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"project_06_usart_tim2\startup_stm32f103xe.o"
+"project_06_usart_tim2\main.o"
+"project_06_usart_tim2\gpio.o"
+"project_06_usart_tim2\tim.o"
+"project_06_usart_tim2\usart.o"
+"project_06_usart_tim2\stm32f1xx_it.o"
+"project_06_usart_tim2\stm32f1xx_hal_msp.o"
+"project_06_usart_tim2\stm32f1xx_hal_gpio_ex.o"
+"project_06_usart_tim2\stm32f1xx_hal_tim.o"
+"project_06_usart_tim2\stm32f1xx_hal_tim_ex.o"
+"project_06_usart_tim2\stm32f1xx_hal_uart.o"
+"project_06_usart_tim2\stm32f1xx_hal.o"
+"project_06_usart_tim2\stm32f1xx_hal_rcc.o"
+"project_06_usart_tim2\stm32f1xx_hal_rcc_ex.o"
+"project_06_usart_tim2\stm32f1xx_hal_gpio.o"
+"project_06_usart_tim2\stm32f1xx_hal_dma.o"
+"project_06_usart_tim2\stm32f1xx_hal_cortex.o"
+"project_06_usart_tim2\stm32f1xx_hal_pwr.o"
+"project_06_usart_tim2\stm32f1xx_hal_flash.o"
+"project_06_usart_tim2\stm32f1xx_hal_flash_ex.o"
+"project_06_usart_tim2\stm32f1xx_hal_exti.o"
+"project_06_usart_tim2\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "project_06_USART_TIM2\project_06_USART_TIM2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "project_06_USART_TIM2.map" -o project_06_USART_TIM2\project_06_USART_TIM2.axf

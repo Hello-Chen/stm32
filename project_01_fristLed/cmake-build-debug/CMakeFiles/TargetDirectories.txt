@@ -1,3 +1,0 @@
-E:/ZM/stm32/project_01_fristLed/cmake-build-debug/CMakeFiles/project_01_fristLed.elf.dir
-E:/ZM/stm32/project_01_fristLed/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/ZM/stm32/project_01_fristLed/cmake-build-debug/CMakeFiles/rebuild_cache.dir

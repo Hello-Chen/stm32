@@ -1,3 +1,0 @@
-E:/ZM/stm32/project_05_USART_TX_RX_Data/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/ZM/stm32/project_05_USART_TX_RX_Data/cmake-build-debug/CMakeFiles/project_05_USART_TX_RX_Data.elf.dir
-E:/ZM/stm32/project_05_USART_TX_RX_Data/cmake-build-debug/CMakeFiles/rebuild_cache.dir

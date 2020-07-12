@@ -1,3 +1,0 @@
-E:/ZM/stm32/project_07_PWM/cmake-build-debug/CMakeFiles/project_07_PWM.elf.dir
-E:/ZM/stm32/project_07_PWM/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/ZM/stm32/project_07_PWM/cmake-build-debug/CMakeFiles/rebuild_cache.dir

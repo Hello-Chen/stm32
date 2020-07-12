@@ -1,3 +1,0 @@
-E:/ZM/stm32/project_02-1_FlowWater/cmake-build-debug/CMakeFiles/project_02-1_FlowWater.elf.dir
-E:/ZM/stm32/project_02-1_FlowWater/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/ZM/stm32/project_02-1_FlowWater/cmake-build-debug/CMakeFiles/rebuild_cache.dir

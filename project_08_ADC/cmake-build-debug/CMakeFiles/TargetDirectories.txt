@@ -1,3 +1,0 @@
-E:/ZM/stm32/project_08_ADC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-E:/ZM/stm32/project_08_ADC/cmake-build-debug/CMakeFiles/project_08_ADC.elf.dir
-E:/ZM/stm32/project_08_ADC/cmake-build-debug/CMakeFiles/edit_cache.dir

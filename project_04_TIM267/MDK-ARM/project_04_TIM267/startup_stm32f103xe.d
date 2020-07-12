@@ -1,1 +1,0 @@
-project_04_tim267\startup_stm32f103xe.o: startup_stm32f103xe.s

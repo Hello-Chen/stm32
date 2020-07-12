@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"535\startup_stm32f103xe.o"
+"535\main.o"
+"535\gpio.o"
+"535\usart.o"
+"535\stm32f1xx_it.o"
+"535\stm32f1xx_hal_msp.o"
+"535\stm32f1xx_hal_gpio_ex.o"
+"535\stm32f1xx_hal_tim.o"
+"535\stm32f1xx_hal_tim_ex.o"
+"535\stm32f1xx_hal_uart.o"
+"535\stm32f1xx_hal.o"
+"535\stm32f1xx_hal_rcc.o"
+"535\stm32f1xx_hal_rcc_ex.o"
+"535\stm32f1xx_hal_gpio.o"
+"535\stm32f1xx_hal_dma.o"
+"535\stm32f1xx_hal_cortex.o"
+"535\stm32f1xx_hal_pwr.o"
+"535\stm32f1xx_hal_flash.o"
+"535\stm32f1xx_hal_flash_ex.o"
+"535\stm32f1xx_hal_exti.o"
+"535\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "535\535.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "535.map" -o 535\535.axf
